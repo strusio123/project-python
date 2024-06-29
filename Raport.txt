@@ -1,0 +1,25 @@
+Cel projektu
+Celem projektu było stworzenie skryptu Python, który automatycznie odpowiada na e-maile zawierające zamówienia na warzywa. Skrypt miał pobierać informacje o ilości zamówionych warzyw z treści e-maila, obliczać ich cenę i wysyłać odpowiedź z wyliczoną kwotą.
+
+Realizacja projektu
+Pobieranie i parsowanie e-maili:
+
+Użyliśmy biblioteki imaplib do połączenia się z serwerem IMAP Gmaila i pobierania nieprzeczytanych wiadomości e-mail.
+Treść e-maili była parsowana przy użyciu biblioteki email.
+Ekstrakcja danych z e-maili:
+
+Zastosowaliśmy wyrażenia regularne (re) do ekstrakcji informacji o zamówieniu, takich jak ilość i rodzaj warzyw.
+Obliczanie ceny:
+
+Stworzyliśmy prostą funkcję obliczającą cenę warzyw na podstawie zdefiniowanych stawek.
+Wysyłanie odpowiedzi:
+
+Użyliśmy biblioteki smtplib do wysyłania odpowiedzi e-mail zawierającej obliczoną cenę zamówionych warzyw.
+Wyzwania
+Bezpieczeństwo konta Gmail:
+
+Konfiguracja dostępu do konta Gmail okazała się wyzwaniem ze względu na konieczność zapewnienia odpowiedniego poziomu bezpieczeństwa. Konieczne było skonfigurowanie mniej bezpiecznego dostępu lub użycie hasła aplikacji.
+Parsowanie złożonych e-maili:
+
+Radzenie sobie z różnymi formatami e-maili, zwłaszcza z multipartowymi wiadomościami, wymagało szczególnej uwagi.
+kikla rzeczy jeszcze nie działa więc przesyłamy projekt na etapie w którym jesteśmy

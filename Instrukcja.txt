@@ -1,0 +1,35 @@
+Instrukcja instalacji i uruchomienia projektu
+Wymagania systemowe:
+Python 3.x
+Biblioteki Python: smtplib, email, imaplib, re
+Krok 1: Instalacja Pythona
+Jeśli Python nie jest zainstalowany na Twoim komputerze, pobierz go ze strony https://www.python.org/ i zainstaluj, postępując zgodnie z instrukcjami dla Twojego systemu operacyjnego.
+
+Krok 2: Skonfiguruj dane logowania do Gmaila
+Aby używać swojego konta Gmail do wysyłania i odbierania wiadomości e-mail, musisz skonfigurować swoje dane logowania w skrypcie.
+
+Zaloguj się do swojego konta Gmail.
+Przejdź do ustawień konta i włącz opcję "Zezwól na mniej bezpieczne aplikacje" (jeśli jest dostępna)
+
+
+Krok 3: Skonfiguruj dostęp do swojego konta Gmail
+Google wymaga, aby aplikacje korzystające z dostępu do konta Gmail korzystały z OAuth 2.0. Aby uprościć proces, możesz użyć funkcji dostępu do mniej bezpiecznych aplikacji lub wygenerować hasło aplikacji, jeśli używasz weryfikacji dwuetapowej.
+
+Zezwalanie na mniej bezpieczne aplikacje:
+Przejdź do ustawień konta Google (https://myaccount.google.com/).
+Wybierz "Bezpieczeństwo".
+W sekcji "Dostęp mniej bezpiecznych aplikacji" włącz dostęp.
+Tworzenie hasła aplikacji (dla kont z weryfikacją dwuetapową):
+Przejdź do ustawień konta Google (https://myaccount.google.com/).
+Wybierz "Bezpieczeństwo".
+W sekcji "Logowanie się w Google" wybierz "Hasła aplikacji".
+Wygeneruj nowe hasło aplikacji i użyj go zamiast hasła do konta Google w skrypcie.
+
+
+Krok 4: Skonfiguruj skrypt
+Otwórz skrypt w dowolnym edytorze tekstu i zamień your_email@example.com oraz your_password na swoje dane logowania.
+
+
+Krok 5: Uruchomienie skryptu
+Aby uruchomić skrypt, zapisz go jako plik .py (np. email_bot.py) i uruchom w terminalu (bash):
+python email_bot.py
